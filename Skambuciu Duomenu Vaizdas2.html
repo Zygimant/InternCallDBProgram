@@ -1,0 +1,284 @@
+<html>
+<head>
+    <title>Skambuciai</title>
+    <link rel="stylesheet" href="SkStatics/SkambuciuD1CSS.CSS">
+    <script type="text/javascript" src="SkStatics/jquery.min.js"></script>
+</head>
+<body onload="Starting()" bgcolor="#E6FFF3">
+
+<div id="SkIsWholeThing" style="position:relative; top:10px; left:-10px;">
+<div style="position:absolute; top:510px; left:0px;">
+    <div>
+        <div id="BuvesSkL1" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL2" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL3" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL4" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL5" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">Laikas</div>
+    </div>
+    <div style="position:absolute; top:35px;">
+        <div id="BuvesSkK1" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK2" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK3" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK4" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK5" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">KasKam</div>
+    </div>
+    <div style="position:absolute; top:70px;">
+        <div id="BuvesSkV1" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV2" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV3" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV4" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV5" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">Vardas</div>
+    </div>
+    <div style="position:absolute; top:105px;">
+        <div id="BuvesSkNr1" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr2" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr3" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr4" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr5" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">JuNumeris</div>
+    </div>
+    <div style="position:absolute; top:140px;">
+        <div id="BuvesSkMNr1" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr2" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr3" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr4" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr5" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+    </div>
+</div>
+
+
+<div id="SkIsExtra2" style="position:absolute; top:750px; left:0px;">
+    <div>
+        <div id="BuvesSkL6" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL7" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL8" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL9" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL10" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">Laikas</div>
+    </div>
+    <div style="position:absolute; top:35px;">
+        <div id="BuvesSkK6" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK7" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK8" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK9" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK10" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">KasKam</div>
+    </div>
+    <div style="position:absolute; top:70px;">
+        <div id="BuvesSkV6" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV7" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV8" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV9" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV10" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">Vardas</div>
+    </div>
+    <div style="position:absolute; top:105px;">
+        <div id="BuvesSkNr6" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr7" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr8" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr9" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr10" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">JuNumeris</div>
+    </div>
+    <div style="position:absolute; top:140px;">
+        <div id="BuvesSkMNr6" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr7" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr8" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr9" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr10" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+    </div>
+</div>
+
+
+<div id="SkIsExtra3" style="position:absolute; top:990px; left:0px;">
+    <div>
+        <div id="BuvesSkL11" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL12" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL13" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL14" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">Laikas</div>
+        <div id="BuvesSkL15" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">Laikas</div>
+    </div>
+    <div style="position:absolute; top:35px;">
+        <div id="BuvesSkK11" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK12" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK13" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK14" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">KasKam</div>
+        <div id="BuvesSkK15" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">KasKam</div>
+    </div>
+    <div style="position:absolute; top:70px;">
+        <div id="BuvesSkV11" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV12" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV13" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV14" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">Vardas</div>
+        <div id="BuvesSkV15" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">Vardas</div>
+    </div>
+    <div style="position:absolute; top:105px;">
+        <div id="BuvesSkNr11" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr12" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr13" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr14" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">JuNumeris</div>
+        <div id="BuvesSkNr15" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">JuNumeris</div>
+    </div>
+    <div style="position:absolute; top:140px;">
+        <div id="BuvesSkMNr11" class="textField2" style="position:absolute; left:50px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr12" class="textField2" style="position:absolute; left:310px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr13" class="textField2" style="position:absolute; left:570px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr14" class="textField2" style="position:absolute; left:830px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+        <div id="BuvesSkMNr15" class="textField2" style="position:absolute; left:1090px; font-size: 32; font-weight: 800;">MusuNumeris</div>
+    </div>
+</div>
+</div>
+
+
+<div id="skInfLaukas1" class="dabarSkInfoLaukas1" style="position:relative; left:40px; top:0px;">
+    <div style="position:relative; left:68px; top:62px; font-size: 62;">
+    <div id="kasKam1Id1">Mums Skambina:</div>
+    <div id="skambinaV1" style="position:relative; top:-12px; font-weight: 550;"></div>
+    <div id="skambinaP1" style="position:relative; top:-12px; font-weight: 550;"></div>
+    <div style="position:relative; top:25px;">Numeriu:<div id="numeris1" style="position:relative; top:-12px; font-weight: 550;"></div></div>
+
+    <div style="position:absolute; left:570px; top:0px; font-size: 60;">Kliento info:
+    <div id="prietaisas1" class= "textField1" style="position:relative; top:0px;">Daiktas:</div>
+    <div id="rmaCode1" class= "textField1" style="position:absolute; top:130px;">Rma:</div></div>
+    <div id="kasKam2Id1" style="position:absolute; left:570; top:240px;">Į Numerį:</div><div id="musuNr1" style="position:absolute; left:570; top:298px; font-weight: 550;">2020</div>
+
+    <img id="mainArrow1" src="SkStatics/GreenArrow.png" width= 150; height=150 style="position:absolute; top:225px; left:380px;">
+</div></div>
+
+<div id="skInfLaukas2" style="position:absolute; left:1345px; top:8px;">
+    <div style="position:relative; left:68px; top:62px; font-size: 62;">
+    <div id="kasKam1Id2">Mums Skambina:</div>
+    <div id="skambinaV2" style="position:relative; top:-12px; font-weight: 550;"></div>
+    <div id="skambinaP2" style="position:relative; top:-12px; font-weight: 550;"></div>
+    <div style="position:relative; top:25px;">Numeriu:<div id="numeris2" style="position:relative; top:-12px; font-weight: 550;"></div></div>
+
+    <div style="position:absolute; left:570px; top:0px; font-size: 60;">Kliento info:
+    <div id="prietaisas2" class= "textField1" style="position:relative; top:0px;">Daiktas:</div>
+    <div id="rmaCode2" class= "textField1" style="position:absolute; top:130px;">Rma:</div></div>
+    <div id="kasKam2Id2" class="textField1" style="position:absolute; left:570; top:240px;">Į Numerį:</div><div id="musuNr2" style="position:absolute; left:570; top:298px; font-weight: 550;">2020</div>
+
+    <img id="mainArrow2" src="SkStatics/GreenArrow.png" width= 150; height=150 style="position:absolute; top:225px; left:380px;">
+</div></div>
+
+
+<script>//jsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjs
+//jsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjsjs
+
+function Starting(){
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+    });
+}
+
+getSkInfo()
+async function getSkInfo(){
+    const ourInfo = jQuery.getJSON("/DataNice");
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    if(ourInfo.responseJSON.JSKiekSkambina > 0){
+        var activeId = ourInfo.responseJSON.JSArSkDarAktyvus;
+        var pirmoSkId = activeId.find(element => element > 0);
+        document.getElementById("skambinaV1").textContent = ourInfo.responseJSON.JSDabarKlVardas[pirmoSkId];
+        document.getElementById("skambinaP1").textContent = ourInfo.responseJSON.JSDabarKlPavarde[pirmoSkId];
+        document.getElementById("kasKam1Id1").textContent = ourInfo.responseJSON.JSDabarKasKam[pirmoSkId];
+        document.getElementById("kasKam2Id1").textContent = ourInfo.responseJSON.JSDabarKasKam2[pirmoSkId];
+        document.getElementById("numeris1").textContent = ourInfo.responseJSON.JSDabarKitasNr[pirmoSkId];
+        var irenginioString1 = ourInfo.responseJSON.JSDabarKlIrenginys[pirmoSkId];
+        if (irenginioString1 != null){
+        if (irenginioString1.length>8){
+            document.getElementById("prietaisas1").style.fontSize = 62-(irenginioString1.length/2);
+        }else{document.getElementById("prietaisas1").style.fontSize = 62;}}
+        document.getElementById("prietaisas1").textContent = ourInfo.responseJSON.JSDabarKlIrenginys[pirmoSkId];
+        document.getElementById("rmaCode1").textContent = "Rma: "+ourInfo.responseJSON.JSDabarKlRMANr[pirmoSkId];
+        document.getElementById("musuNr1").textContent = ourInfo.responseJSON.JSDabarMusuNr[pirmoSkId];
+        var arMesArJie = ourInfo.responseJSON.JSDabarKasKam[pirmoSkId];
+        switch(arMesArJie){
+            case "Mes skambiname:": document.getElementById("mainArrow1").className = "leftFace";
+            break;
+            case "Mums skambina:": document.getElementById("mainArrow1").className = "rightFace";
+            break;
+        }
+        if(ourInfo.responseJSON.JSKiekSkambina > 1){
+            var activeId = ourInfo.responseJSON.JSArSkDarAktyvus;
+            var antroSkId = activeId.find(element => element > pirmoSkId);
+            document.getElementById("skambinaV2").textContent = ourInfo.responseJSON.JSDabarKlVardas[antroSkId];
+            document.getElementById("skambinaP2").textContent = ourInfo.responseJSON.JSDabarKlPavarde[antroSkId];
+            document.getElementById("kasKam1Id2").textContent = ourInfo.responseJSON.JSDabarKasKam[antroSkId];
+            document.getElementById("kasKam2Id2").textContent = ourInfo.responseJSON.JSDabarKasKam2[antroSkId];
+            document.getElementById("numeris2").textContent = ourInfo.responseJSON.JSDabarKitasNr[antroSkId];
+            var irenginioString2 = ourInfo.responseJSON.JSDabarKlIrenginys[antroSkId];
+            if (irenginioString2 != null){
+            if (irenginioString2.length>8){
+                document.getElementById("prietaisas2").style.fontSize = 62-(irenginioString2.length/2);
+            }else{document.getElementById("prietaisas2").style.fontSize = 62;}}
+            document.getElementById("prietaisas2").textContent = ourInfo.responseJSON.JSDabarKlIrenginys[antroSkId];
+            document.getElementById("rmaCode2").textContent = "Rma: "+ourInfo.responseJSON.JSDabarKlRMANr[antroSkId];
+            document.getElementById("musuNr2").textContent = ourInfo.responseJSON.JSDabarMusuNr[antroSkId];
+            var arMesArJie = ourInfo.responseJSON.JSDabarKasKam[antroSkId];
+            switch(arMesArJie){
+                case "Mes skambiname:": document.getElementById("mainArrow2").className = "leftFace";
+                break;
+                case "Mums skambina:": document.getElementById("mainArrow2").className = "rightFace";
+                break;
+            }
+        }
+    }
+    Rodymas(ourInfo);
+    getIsInfo(ourInfo);
+    getSkInfo(ourInfo);
+}
+
+
+async function getIsInfo(ourInfo){
+    for (i=0;i<15;i++){
+        document.getElementById("BuvesSkL"+(i+1)).textContent = ourInfo.responseJSON.JSBuveLaikas[i];
+        document.getElementById("BuvesSkK"+(i+1)).textContent = ourInfo.responseJSON.JSBuveKasKam[i];
+        document.getElementById("BuvesSkV"+(i+1)).textContent = ourInfo.responseJSON.JSBuveKlVards[i]+ourInfo.responseJSON.JSBuveKlPavarde[i];
+        document.getElementById("BuvesSkNr"+(i+1)).textContent = "Nr. "+ourInfo.responseJSON.JSBuveKitasNr[i];
+        document.getElementById("BuvesSkMNr"+(i+1)).textContent = ourInfo.responseJSON.JSBuveKasKam2[i]+ourInfo.responseJSON.JSBuveMusuNr[i];
+    }
+}
+
+
+function Rodymas(ourInfo){
+    switch(ourInfo.responseJSON.JSKiekSkambina){
+        case 0:
+            document.getElementById("skInfLaukas1").style.opacity = "0";
+            document.getElementById("skInfLaukas2").style.opacity = "0";
+            document.getElementById("SkIsExtra2").style.opacity = "1";
+            document.getElementById("SkIsExtra3").style.opacity = "1";
+            document.getElementById("SkIsWholeThing").style.top = "-460px";
+        break;
+        case 1:
+            document.getElementById("skInfLaukas1").style.opacity = "1";
+            document.getElementById("skInfLaukas2").style.opacity = "0";
+            document.getElementById("SkIsExtra2").style.opacity = "0";
+            document.getElementById("SkIsExtra3").style.opacity = "0";
+            document.getElementById("SkIsWholeThing").style.top = "10px";
+            document.getElementById("skInfLaukas1").className = "dabarSkInfoLaukas1";
+            document.getElementById("skInfLaukas1").style.left = "40px";
+        break;
+        case 2:
+            document.getElementById("skInfLaukas1").style.opacity = "1";
+            document.getElementById("skInfLaukas2").style.opacity = "1";
+            document.getElementById("SkIsExtra2").style.opacity = "0";
+            document.getElementById("SkIsExtra3").style.opacity = "0";
+            document.getElementById("SkIsWholeThing").style.top = "10px";
+            document.getElementById("skInfLaukas1").className = "dabarSkInfoLaukas2";
+            document.getElementById("skInfLaukas2").className = "dabarSkInfoLaukas2";
+            document.getElementById("skInfLaukas1").style.left = "-300px";
+            document.getElementById("skInfLaukas2").style.left = "570px";
+        break;
+        default:
+            document.getElementById("skInfLaukas1").style.opacity = "1";
+            document.getElementById("skInfLaukas2").style.opacity = "1";
+            document.getElementById("SkIsExtra2").style.opacity = "0";
+            document.getElementById("SkIsExtra3").style.opacity = "0";
+            document.getElementById("SkIsWholeThing").style.top = "10px";
+            document.getElementById("skInfLaukas1").className = "dabarSkInfoLaukas2";
+            document.getElementById("skInfLaukas2").className = "dabarSkInfoLaukas2";
+            document.getElementById("skInfLaukas1").style.left = "-300px";
+            document.getElementById("skInfLaukas2").style.left = "570px";
+        break;
+    }
+}
+</script>
+</body>
+</html>
